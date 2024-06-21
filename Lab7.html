@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab7</title>
+    <title>Task List</title>
     <link rel="stylesheet" href="lab7.css">
 </head>
 <body>
     <div class="container">
-        <form id="form">
-            <label class="labtitle" for="subtask">Submit Task:</label>
-            <textarea id="subtask" name="Task" required></textarea>
-            <input type="submit" value="Submit">
-            <br><br><br> 
-            <ul>
-                <li><p>hi</p></li>
-                <li><p>o</p></li>
-                <li><p>f</p></li>
-            </ul>
+        <h1>Task List</h1>
+        <form id="task-form">
+            <label for="task-input">Add Task:</label>
+            <input type="text" id="task-input" placeholder="Enter task..." required>
+            <input type="submit" value="Add">
         </form>
+        <ul id="task-list"></ul>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
