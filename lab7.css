@@ -18,12 +18,18 @@ body {
 .container {
     max-width: 600px;
     margin: 20px auto;
-    background-color:rgb(150, 177, 202);
+    background-color:var(--primary-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     
 }
+
+.labtitle {
+    font-size: var(--font-size);
+    color: var(--secondary-color);
+}
+
 
 input[type="text"],
 textarea,
@@ -39,7 +45,7 @@ select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-image: url('');
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: 50%;
@@ -60,4 +66,10 @@ button {
 input[type="submit"]:hover,
 button:hover {
     background-color: rgb(150, 177, 202);
+}
+:root {
+    --primary-color: rgb(150, 177, 202);
+    --secondary-color: -webkit-linear-gradient(#708fac, #1f2bc7) ;
+    --font-size: 30px;
+    --margin: 10px;
 }
