@@ -2,34 +2,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-   
-    background-image: url('');
-                        
+    background-image: url('https://d2l4kn3pfhqw69.cloudfront.net/wp-content/uploads/2023/08/RE-condos-1024x576.jpg'); 
     height: 100%;
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    max-width: 100%; 
-    margin: 0 auto;
+    max-width: 100%;
     padding: 0 20px;
 }
+
 .container {
     max-width: 600px;
     margin: 20px auto;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
 }
 
 .labtitle {
     font-size: var(--font-size);
-    color: var(--secondary-color);
+    background: var(--secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 
 input[type="text"],
 textarea,
@@ -41,6 +38,7 @@ select {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 select {
     appearance: none;
     -webkit-appearance: none;
@@ -50,26 +48,34 @@ select {
     background-position-x: 95%;
     background-position-y: 50%;
 }
+
 textarea {
     height: 100px;
 }
+
 input[type="submit"],
 button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     background-color: var(--tertiary-color);
-    color: #fff;
+    color: var(--secondary-color);
     cursor: pointer;
     font-size: 16px;
 }
+
 input[type="submit"]:hover,
 button:hover {
     background-color: var(--secondary-color);
+    color: var(--secondary-color); 
+    -webkit-animation: forwards;
+    -webkit-animation-delay: 0.2s;
+    -webkit-animation-duration: unset;
 }
+
 :root {
     --primary-color: rgb(150, 177, 202);
-    --secondary-color: -webkit-linear-gradient(#708fac, #1f2bc7);
+    --secondary-color: -webkit-linear-gradient(#708fac, #1f2bc7); 
     --tertiary-color: rgb(211, 208, 241);
     --font-size: 30px;
     --margin: 10px;
